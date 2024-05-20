@@ -24,6 +24,19 @@
             color: #666;
             font-size: 18px;
         }
+	.animated-image {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            animation: spin 2s infinite linear;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
@@ -34,6 +47,8 @@
     <br/>
     <br/>
     <br/>
-    <center><image href='./LLCWIZ_64x64.PNG'/></center>
+    <br/>
+    <br/>
+    <center><img class="animated-image" src="LLCWIZ_64x64.PNG" alt="Animated Image"></center>
 </body>
 </html>
